@@ -1,0 +1,22 @@
+{
+  "name": "bajajqualifier",
+  "version": "1.0.0",
+  "description": "rest api for qualifier round",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monishwankhade10/bajajqualifier.git"
+  },
+  "author": "Monish Wankhade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monishwankhade10/bajajqualifier/issues"
+  },
+  "homepage": "https://github.com/monishwankhade10/bajajqualifier#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -4,8 +4,6 @@ app.use(express.json());
 let port=process.env.PORT;
 // let port=8080;
 
-
-
 app.post("/bfhl",(req,res)=>{
 
     let odd=[];
@@ -14,12 +12,13 @@ app.post("/bfhl",(req,res)=>{
     return res.status(400).send();
     const numbers=req.body.numbers;
     for(i=0;i<numbers.length;i++){
-        let temp=parseInt(numbers[i]);        
+        let temp=Number(numbers[i]);        
         if(isNaN(temp)){
             return res.json({
                 "is_success":false,
                 "user_id":"monish_wankhade_19112000"
             });
+
         }
         if(temp%2==0)
         even.push(temp);

@@ -6,6 +6,6 @@ let port=process.env.PORT;
 app.get("/bfhl",(req,res)=>{
     res.status(200).json({"monish":"monish"});
 })
-app.listen(PORT,()=>{
+app.listen(port,()=>{
     console.log(`server running on port ${PORT}`);
 })
